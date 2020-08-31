@@ -1,0 +1,267 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #FFF;
+  font-family: 'Open Sans', sans-serif;
+}
+
+hr {
+  background-color: #00A7DC;
+  border-top: 5px solid rgba(0, 0, 0, 0.1);
+  width: 100px;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.rosa {
+  color: #F3767A;
+}
+
+.azul {
+  color: #00A7DC;
+}
+
+nav a {
+  color: #FFF;
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+  margin-left: 40px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+nav a:hover {
+  color: #00A7DC;
+}
+
+.contact-btn {
+  border: 1px solid #FFF;
+  border-radius: 20px;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.contact-btn:hover {
+  background-color: #00A7DC;
+  border-color: #00A7DC;
+  color: #FFF;
+}
+
+.banner {
+  height: 60vh;
+  background-color: #005570;
+  background-image: url(../images/element-intro-righ.svg);
+  background-repeat: no-repeat;
+  background-position: 80% 100%;
+  background-size: 35%;
+}
+
+.banner .element-1 {
+  height: 80%;
+  width: 40%;
+  background-image: url(../images/element-intro-left.svg);
+  background-repeat: no-repeat;
+  background-size: 30%;
+  background-position: center left;
+  margin-right: auto;
+  position: absolute;
+}
+
+.title h1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 56px;
+  font-weight: 700;
+}
+
+.title h2, h3 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.servicos {
+  background-color: #00252D;
+}
+
+.servicos .icon {
+  width: 100px;
+  height: auto;
+}
+
+.servicos .text {
+  width: 80%;
+}
+
+.servicos .element-2 {
+  height: 80%;
+  width: 40%;
+  background-image: url(../images/element-servicos.svg);
+  background-repeat: no-repeat;
+  background-size: 30%;
+  background-position: center left;
+  margin-right: auto;
+  position: absolute;
+}
+
+.icon-title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.card {
+  height: 560px;
+}
+
+.card-body .card-title {
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.card-body .card-subtitle {
+  font-weight: 700;
+  color: #000 !important;
+}
+
+.card-body .card-text li {
+  color: #000;
+  list-style-type: none;
+}
+
+.card-body .card-text li i {
+  color: #00A7DC;
+}
+
+.card-body .prazos li {
+  font-weight: 700;
+  color: #000;
+  list-style-type: none;
+}
+
+.card-body .prazos li i {
+  color: #000 !important;
+}
+
+.card-body .card-link {
+  color: #FFF;
+  font-weight: 700;
+  font-size: 48px;
+  text-decoration: none;
+  width: 80%;
+  border-radius: 50px;
+}
+
+.card-body .card-link span {
+  font-size: 22px;
+}
+
+.audio {
+  background-color: #005570;
+  background-image: url(../images/element-audio.svg);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 30%;
+}
+
+.audio .card-link {
+  background-color: #F3767A;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.audio .card-link:hover {
+  background-color: #F25055;
+}
+
+.visual {
+  background-color: #00252D;
+  background-image: url(../images/element-visual.svg);
+  background-repeat: no-repeat;
+  background-size: 30%;
+  background-position: -25% 50%;
+}
+
+.visual .card-link {
+  background-color: #00A7DC;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.visual .card-link:hover {
+  background-color: #057CA2;
+}
+
+.contato {
+  background-color: #005570;
+  background-image: url(../images/element-contato.svg);
+  background-repeat: no-repeat;
+  background-size: 35%;
+  background-position: 35% 100%;
+}
+
+.contato form {
+  background-color: #00252D;
+}
+
+.contato form textarea {
+  min-height: 150px;
+}
+
+.contato form .button {
+  background-color: #F3767A;
+  border: none;
+  border-radius: 30px;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.contato form .button:hover {
+  background-color: #F25055;
+}
+
+@media (max-width: 900px) {
+  .card {
+    height: 600px;
+  }
+  .card-link {
+    font-size: 32px !important;
+  }
+  .banner {
+    background-size: 80%;
+    background-position: 280% 100%;
+  }
+  .banner .element-1 {
+    height: 80%;
+    width: 60%;
+    background-image: url(../images/element-intro-left.svg);
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position: center left;
+    margin-right: auto;
+    position: absolute;
+  }
+  .servicos {
+    background-image: url(../images/element-servicos.svg);
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: -10% 105%;
+  }
+  .audio {
+    background-position: right bottom;
+    background-size: 70%;
+  }
+  .visual {
+    background-size: 80%;
+    background-position: -200% 40%;
+  }
+  .contato {
+    background-size: 120%;
+    background-position: 120% 110%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
