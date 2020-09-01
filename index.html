@@ -12,25 +12,31 @@
 </head>
 <body>
 
-  <nav class="navbar navbar-expand-lg position-absolute w-100 py-3">
+  <nav class="navbar navbar-expand-lg w-100 py-3">
     <div class="container">
-      <a class="navbar-brand" href="#">LJ&M</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      <a class="navbar-brand m-0">
+        <img src="/images/logo.svg" alt="">
+      </a>
     
-      <div class="collapse navbar-collapse d-flex" id="conteudoNavbarSuportado">
-        <ul class="ml-auto navbar-nav">
+      <div class="collapse navbar-collapse d-flex" id="navbarSupportedContent">
+        <ul class="ml-auto navbar-nav main-menu">
           <li class="nav-item">
-            <a class="nav-link" href="#servicos">serviços</a>
+            <a class="link" href="#servicos">serviços</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#audio">preços</a>
+            <a class="link" href="#audio">preços</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link contact-btn py-2 px-5" href="#contato">contato</a>
+            <a class="link contact-btn py-2 px-5">contato</a>
           </li>
         </ul>
+
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+
       </div>
     </div>
   </nav>
@@ -138,7 +144,7 @@
                   <li><i class="fas fa-clock mr-2"></i>Entrega em 2 dias úteis</li>
                   <li><i class="fas fa-exclamation-circle mr-2"></i>Até 2 revisões</li>
                 </ul>
-                <a href="#" class="card-link py-1 mx-auto d-flex justify-content-center mt-2"><span class="mt-auto mr-1">R$</span>200<span class="ml-1">,00</span></a>
+                <a href="#contato" class="card-link py-1 mx-auto d-flex justify-content-center mt-2"><span class="mt-auto mr-1">R$</span>200<span class="ml-1">,00</span></a>
               </div>
             </div>
           </div>
@@ -161,7 +167,7 @@
                   <li><i class="fas fa-clock mr-2"></i>Entrega em 3 dias úteis</li>
                   <li><i class="fas fa-exclamation-circle mr-2"></i>Até 3 revisões</li>
                 </ul>
-                <a href="#" class="card-link py-1 mx-auto d-flex justify-content-center mt-2"><span class="mt-auto mr-1">R$</span>250<span class="ml-1">,00</span></a>
+                <a href="#contato" class="card-link py-1 mx-auto d-flex justify-content-center mt-2"><span class="mt-auto mr-1">R$</span>250<span class="ml-1">,00</span></a>
               </div>
             </div>
           </div>
@@ -185,7 +191,7 @@
                   <li><i class="fas fa-clock mr-2"></i>Entrega em 3 dias úteis</li>
                   <li><i class="fas fa-exclamation-circle mr-2"></i>Até 3 revisões</li>
                 </ul>
-                <a href="#" class="card-link py-1 mx-auto d-flex justify-content-center mt-2"><span class="mt-auto mr-1">R$</span>300<span class="ml-1">,00</span></a>
+                <a href="#contato" class="card-link py-1 mx-auto d-flex justify-content-center mt-2"><span class="mt-auto mr-1">R$</span>300<span class="ml-1">,00</span></a>
               </div>
             </div>
           </div>
@@ -220,7 +226,7 @@
                 <li><i class="fas fa-clock mr-2"></i>Entrega em 2 dias úteis</li>
                 <li><i class="fas fa-exclamation-circle mr-2"></i>Até 2 revisões</li>
               </ul>
-              <a href="#" class="card-link py-1 mx-auto d-flex justify-content-center mt-2"><span class="mt-auto mr-1">R$</span>220<span class="ml-1">,00</span></a>
+              <a href="#contato" class="card-link py-1 mx-auto d-flex justify-content-center mt-2"><span class="mt-auto mr-1">R$</span>220<span class="ml-1">,00</span></a>
             </div>
           </div>
         </div>
@@ -241,7 +247,7 @@
                 <li><i class="fas fa-clock mr-2"></i>Entrega em 3 dias úteis</li>
                 <li><i class="fas fa-exclamation-circle mr-2"></i>Até 3 revisões</li>
               </ul>
-              <a href="#" class="card-link py-1 mx-auto d-flex justify-content-center mt-2"><span class="mt-auto mr-1">R$</span>300<span class="ml-1">,00</span></a>
+              <a href="#contato" class="card-link py-1 mx-auto d-flex justify-content-center mt-2"><span class="mt-auto mr-1">R$</span>300<span class="ml-1">,00</span></a>
             </div>
           </div>
         </div>
@@ -263,7 +269,7 @@
                 <li><i class="fas fa-clock mr-2"></i>Entrega de 15 a 20 dias úteis</li>
                 <li><i class="fas fa-exclamation-circle mr-2"></i>Até 3 revisões</li>
               </ul>
-              <a href="#" class="card-link py-1 mx-auto d-flex justify-content-center mt-2"><span class="mt-auto mr-1">R$</span>1.100<span class="ml-1">,00</span></a>
+              <a href="#contato" class="card-link py-1 mx-auto d-flex justify-content-center mt-2"><span class="mt-auto mr-1">R$</span>1.100<span class="ml-1">,00</span></a>
             </div>
           </div>
         </div>
@@ -305,9 +311,10 @@
   </section>
 
   <footer>
-
+    <p>Designed by <a target="_blank" href="https://matheosct.github.io/">Matheus C.</a></p>
   </footer>
 
+  <script src="script.js" async defer></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>  

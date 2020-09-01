@@ -4,6 +4,7 @@
   box-sizing: border-box;
   color: #FFF;
   font-family: 'Open Sans', sans-serif;
+  scroll-behavior: smooth;
 }
 
 hr {
@@ -17,32 +18,42 @@ hr {
 .rosa { color: #F3767A; }
 .azul { color: #00A7DC; }
 
-nav a {
-  color: #FFF;
-  font-weight: bold;
-  font-family: 'Raleway', sans-serif;
-  margin-left: 40px;
-  transition: 0.3s ease;
+nav img {
+  width: 100px;
+  height: auto;
 }
 
-nav a:hover {
-  color: #00A7DC;
+nav {
+  position: absolute !important;
+
+  a {
+    color: #FFF;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    margin-left: 40px;
+    transition: 0.3s ease;
+  
+    &:hover {
+      color: #F3767A;
+    }
+  }
 }
 
 .contact-btn {
   border: 1px solid #FFF;
   border-radius: 20px;
   transition: 0.3s all;
-}
+  cursor: pointer;
 
-.contact-btn:hover {
-  background-color: #00A7DC;
-  border-color: #00A7DC;
-  color: #FFF;
+  &:hover {
+    background-color: #F3767A;
+    border-color: #F3767A;
+    color: #FFF;
+  }
 }
 
 .banner {
-  height: 60vh;
+  height: 80vh;
   background-color: #005570;
   background-image: url(../images/element-intro-righ.svg);
   background-repeat: no-repeat;
@@ -206,8 +217,154 @@ nav a:hover {
   }
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+footer {
+    display: flex;
+    background-color: #0a090f;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+p {
+    font-size: 12px;
+    color: #FFF !important;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #63F767;
+    transition: all 0.3s;
+}
+
+a:hover { color: #11aa16; }
+
 @media (max-width: 900px) {
 
+  nav {
+    position: fixed !important;
+    z-index: 10;
+
+    .navbar-brand {
+      z-index: 11;
+    }
+
+    .nav-item a {
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      font-size: 1.2rem;
+    }
+  
+    .collapse { flex-basis: 0; }
+
+    .main-menu {
+      top: 0;
+      position: fixed;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 10em;
+      padding-bottom: 200px !important;
+      right: 0;
+      width: 100% !important;
+      height: 100vh;
+      background-color: #00252D;
+      background-size: 100%;
+      transform: translateY(-100%);
+      transition: transform .5s ease;
+  
+        li {
+          opacity: 0;
+        }
+    }
+  
+    .burger {
+      width: 50px;
+      height: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      margin-left: auto;
+      z-index: 11;
+      
+      div {
+        width: 40px;
+        height: 2px;
+        margin-bottom: 6px;
+        background-color: #FFF;
+      }
+  
+      .line1 .line2 {
+        margin-bottom: 3px;
+      }
+  
+      .line1 {
+        transition: all 0.2s ease;
+      }
+  
+      .line3 {
+        transition: all 0.2s ease;
+      }
+  
+      .nav-active {
+        transform: translateX(0);
+      }
+    }
+  
+    .toggle {
+      .line1 { transform: rotate(45deg) translatex(0) translateY(11px); }
+      .line2 { opacity: 0; }
+      .line3 { transform: rotate(-45deg) translatex(0) translateY(-11px); }
+    }
+  
+    .nav-active {
+      transform: translateX(0);
+    }
+  
+    .nav-item::before, .nav-item::after {
+          content: '';
+          height: 2px;
+          width: 100%;
+          background-color: var(--very-light-gray);
+          display: block;
+          transform: scale(0, 1);
+          transition: all 0.3s ease-out;
+    }
+  
+    .nav-item::before {
+        transform-origin: left;
+    }
+  
+    .nav-item::after {
+        transform-origin: right;
+    }
+  
+    .nav-item:hover::before,
+    .nav-item:hover::after {
+        transform: scale(1, 1);
+    }
+  
+    @keyframes navLinkFade {
+        from {
+            opacity: 0;
+            transform: translateY(-350px);
+        }
+  
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+  }
+  
   .card { height: 600px; }
 
   .card-link { font-size: 32px !important; }
