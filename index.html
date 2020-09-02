@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="styles/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+  
 </head>
 <body>
 
@@ -45,18 +46,17 @@
 
     <div class="element-1"></div>
 
-    <div class="container d-flex flex-column flex-lg-row text-center text-lg-left justify-content-between align-items-center my-5">
-      <div class="col-10 col-lg-5 title">
+    <div class="container d-flex flex-column flex-lg-row text-center text-lg-left justify-content-between align-items-center my-5 p-0">
+      <div class="col-10 col-lg-6 title">
         <h1>
-          Quer criar <br>
-          seu próprio <br>
-          <span class="rosa">podcast?</span>
+          Quer criar seu <br>
+          próprio <span class="rosa">podcast?</span>
         </h1>
       </div>
 
       <div class="col-lg-2"></div>
 
-      <div class="col-10 col-lg-5 mt-auto">
+      <div class="col-10 col-lg-4 mt-auto">
         <hr class="mx-auto mr-lg-auto ml-lg-0">
         <p><strong>
           Sempre quis ter seu próprio podcast mas não sabe por onde começar? Venha conosco que te auxiliamos com isso.
@@ -84,7 +84,7 @@
 
           <div class="d-flex flex-column flex-lg-row mb-5 align-items-lg-center">
             <div class="icon mx-auto mr-lg-5">
-              <img src="/images/audio.svg" alt="">
+              <img src="images/audio.svg" alt="">
             </div>
             <div class="text mx-auto mt-4">
               <div class="icon-title rosa mb-3 mx-auto">Edição de Áudio</div>
@@ -94,7 +94,7 @@
 
           <div class="d-flex flex-column flex-lg-row mb-5 align-items-lg-center">
             <div class="icon mx-auto mr-lg-5">
-              <img src="/images/visual.svg" alt="">
+              <img src="images/visual.svg" alt="">
             </div>
             <div class="text mx-auto mt-4">
               <div class="icon-title rosa mb-3 mx-auto">Identidade Visual</div>
@@ -104,7 +104,7 @@
 
           <div class="d-flex flex-column flex-lg-row mb-5 align-items-lg-center">
             <div class="icon mx-auto mr-lg-5">
-              <img src="/images/site.svg" alt="">
+              <img src="images/site.svg" alt="">
             </div>
             <div class="text mx-auto mt-4">
               <div class="icon-title rosa mb-3 mx-auto">Criação de Site</div>
@@ -291,21 +291,23 @@
       <div class="col-2"></div>
 
       <div class="col-10 col-lg-5">
-        <form class="p-4 rounded d-flex flex-column">
+
+        <form class="p-4 rounded d-flex flex-column" method="post" action="contact.php">
           <h3 class="rosa mb-4">Contato</h3>
           
           <div class="form-group mb-4">
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu email">
+            <input type="text" class="form-control" name="name" placeholder="Seu nome">
           </div>
           <div class="form-group mb-4">
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
+            <input type="email" class="form-control" name='email' aria-describedby="emailHelp" placeholder="Seu email">
           </div>
           <div class="form-group mb-4">
-            <textarea class="form-control" aria-label="With textarea" placeholder="Sua mensagem"></textarea>
+            <textarea class="form-control" name="message" aria-label="With textarea" placeholder="Sua mensagem"></textarea>
           </div>
           
-          <button type="submit" class="button py-3 px-5 ml-auto">Enviar</button>
+          <button type="submit" name="submit" value="Send Form" class="button py-3 px-5 ml-auto">Enviar</button>
         </form>
+
       </div>
     </div>
   </section>
