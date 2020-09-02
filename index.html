@@ -22,17 +22,18 @@
       <div class="collapse navbar-collapse d-flex" id="navbarSupportedContent">
         <ul class="ml-auto navbar-nav main-menu">
           <li class="nav-item">
-            <a class="link" href="#servicos">serviços</a>
+            <a class="link" style="cursor: pointer;" 
+            onclick="goToLink('#servicos')">serviços</a>
           </li>
           <li class="nav-item">
-            <a class="link" href="#audio">preços</a>
+            <a class="link" onclick="goToLink('#audio')">preços</a>
           </li>
           <li class="nav-item">
-            <a class="link contact-btn py-2 px-5" href="#contato">contato</a>
+            <a class="link contact-btn py-2 px-5" onclick="goToLink('#contato')">contato</a>
           </li>
         </ul>
 
-        <div class="burger">
+        <div id="burger" class="burger" >
           <div class="line1"></div>
           <div class="line2"></div>
           <div class="line3"></div>

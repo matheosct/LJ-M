@@ -18,12 +18,12 @@ const navSlide = () => {
     burger.classList.toggle('toggle');
   });
 
-  navLinks.addEventListener('click', () => {
-    // toggle nav
-    nav.classList.toggle('nav-active');
-    burger.classList.toggle('toggle');
-  });
-
 }
 
 navSlide();
+
+function goToLink(link) {
+  window.location.href = link;
+
+  document.getElementById('burger').click();
+}
